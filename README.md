@@ -8,6 +8,15 @@ GPU_EXPORTER{GPU="GPU0",Pid="",Type="",ProcessName="Total"} 15079
 GPU_EXPORTER{GPU="GPU0",Pid="",Type="",ProcessName="Used"} 12435
 GPU_EXPORTER{GPU="GPU0",Pid="",Type="",ProcessName="Free"} 2644
 
+编译构建
+**_go build -v gpu_process_exporter.go_**
+
+执行
+**_./gpu_process_exporter_**
+
+查看
+**http://ip:9102/metrics**
+
 集成进Grafana的效果图
 ![image](https://user-images.githubusercontent.com/12092975/109594336-91939a80-7b4d-11eb-9c2c-f5e9c5d14b5b.png)
 
