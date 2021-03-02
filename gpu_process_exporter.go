@@ -12,7 +12,6 @@ import (
 )
 
 // 解析XML,定义结构体
-
 type Processes struct {  
     XMLName xml.Name `xml:"processes"`
     ProcessInfo []ProcessInfo `xml:"process_info"`
@@ -68,19 +67,13 @@ func metrics(response http.ResponseWriter, request *http.Request) {
                     <process_info>
                         <pid>408</pid>
                         <type>C</type>
-                        <process_name>/home/hexocrs/miniconda3/bin/python</process_name>
+                        <process_name>/home/miniconda3/bin/python</process_name>
                         <used_memory>1849 MiB</used_memory>
                     </process_info>
                     <process_info>
                         <pid>3049</pid>
                         <type>C</type>
-                        <process_name>nginx: worker process ./sbin/detect_ocr -p /usr/local/services/youtu_private_invoiceocr_detect-1.7.2</process_name>
-                        <used_memory>135 MiB</used_memory>
-                    </process_info>
-                    <process_info>
-                        <pid>3064</pid>
-                        <type>C</type>
-                        <process_name>nginx: worker process ./sbin/glocr_server -p /usr/local/services/youtu_private_generalocr-2.3.1</process_name>
+                        <process_name>nginx</process_name>
                         <used_memory>135 MiB</used_memory>
                     </process_info>
                 </processes>
@@ -98,19 +91,13 @@ func metrics(response http.ResponseWriter, request *http.Request) {
                     <process_info>
                         <pid>4081</pid>
                         <type>C</type>
-                        <process_name>/home/hexocrs/miniconda3/bin/python</process_name>
+                        <process_name>/home/miniconda3/bin/python</process_name>
                         <used_memory>1849 MiB</used_memory>
                     </process_info>
                     <process_info>
                         <pid>30491</pid>
                         <type>C</type>
-                        <process_name>nginx: worker process ./sbin/detect_ocr -p /usr/local/services/youtu_private_invoiceocr_detect-1.7.2</process_name>
-                        <used_memory>135 MiB</used_memory>
-                    </process_info>
-                    <process_info>
-                        <pid>30641</pid>
-                        <type>C</type>
-                        <process_name>nginx: worker process ./sbin/glocr_server -p /usr/local/services/youtu_private_generalocr-2.3.1</process_name>
+                        <process_name>nginx</process_name>
                         <used_memory>135 MiB</used_memory>
                     </process_info>
                 </processes>
